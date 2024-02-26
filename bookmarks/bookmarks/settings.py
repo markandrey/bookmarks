@@ -126,3 +126,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = 'dashboard'  # после успешного входа, если в запросе нет параметра next
 LOGIN_URL = 'login'  # зарегистрировать его вход
 LOGOUT_URL = 'logout'  # чтобы зарегистрировать его выход
+
+# отправка писем на терминал
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
