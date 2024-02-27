@@ -59,6 +59,8 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                # ф-ия Python, кторая принимает объект request и возвращает
+                # словарь, который добавляется в контекст запроса
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
