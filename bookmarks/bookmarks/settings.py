@@ -135,3 +135,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # закачивание файлов на сайт и раздача медиафайлов
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'account.authentication.EmailAuthBackend',
+]
