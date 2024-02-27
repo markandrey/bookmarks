@@ -129,3 +129,7 @@ LOGOUT_URL = 'logout'  # чтобы зарегистрировать его вы
 
 # отправка писем на терминал
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# закачивание файлов на сайт и раздача медиафайлов
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
